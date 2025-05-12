@@ -1,0 +1,197 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Научная работа | НГТУ НЭТИ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .work-metadata {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .abstract {
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .references {
+      font-size: 0.9rem;
+    }
+    .figure-caption {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Научная работа</h1>
+      <p>Новосибирский государственный технический университет</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'departmants' %}">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'works' %}">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <article>
+      <!-- Заголовок работы -->
+      <h2 class="mb-4">Исследование в области квантовых вычислений: новые алгоритмы факторизации</h2>
+
+      <!-- Метаданные работы -->
+      <div class="work-metadata">
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Авторы:</strong> Иванов Иван Иванович, Петров Петр Петрович</p>
+            <p><strong>Научный руководитель:</strong> д.ф.-м.н., проф. Сидоров С. С.</p>
+            <p><strong>Кафедра:</strong> Вычислительной техники</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Год публикации:</strong> 2024</p>
+            <p><strong>Тип работы:</strong> Научная статья</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Аннотация -->
+      <section class="mb-5">
+        <h3>Аннотация</h3>
+        <div class="abstract">
+          <p>В данной работе представлен новый алгоритм квантовой факторизации, основанный на модифицированном варианте алгоритма Шора. Предложенный метод позволяет сократить количество необходимых кубитов на 30% по сравнению с классической реализацией при сохранении той же вероятности успешного нахождения делителей.</p>
+          <p>Экспериментальные результаты, полученные на симуляторе квантового компьютера IBM Qiskit, демонстрируют эффективность алгоритма для чисел длиной до 16 бит. Теоретический анализ показывает возможность масштабирования метода для чисел большей разрядности.</p>
+          <p>Работа имеет важное значение для развития постквантовой криптографии и оценки стойкости современных криптографических систем.</p>
+        </div>
+      </section>
+
+      <!-- Основное содержание -->
+      <section class="mb-5">
+        <h3>1. Введение</h3>
+        <p>Квантовые вычисления представляют собой перспективное направление, способное коренным образом изменить подходы к решению сложных вычислительных задач. Одним из наиболее известных квантовых алгоритмов является алгоритм Шора, позволяющий эффективно решать задачу факторизации целых чисел.</p>
+
+        <figure class="figure d-block text-center my-4">
+          <img src="https://via.placeholder.com/600x300?text=Схема+алгоритма" class="figure-img img-fluid rounded" alt="Схема предложенного алгоритма">
+          <figcaption class="figure-caption">Рис. 1. Схематическое представление модифицированного алгоритма факторизации</figcaption>
+        </figure>
+
+        <h3 class="mt-5">2. Методология</h3>
+        <p>В основе предложенного метода лежит комбинация трех ключевых идей:</p>
+        <ol>
+          <li>Оптимизация квантового преобразования Фурье</li>
+          <li>Использование частично запутанных состояний</li>
+          <li>Итеративная процедура уточнения результатов</li>
+        </ol>
+
+        <h3 class="mt-5">3. Результаты</h3>
+        <p>Эксперименты проводились на симуляторе с 20 кубитами. Для тестирования были выбраны полупростые числа длиной от 8 до 16 бит.</p>
+
+        <table class="table table-bordered table-hover my-4">
+          <thead class="table-light">
+            <tr>
+              <th>Число</th>
+              <th>Классический алгоритм (кубиты)</th>
+              <th>Наш алгоритм (кубиты)</th>
+              <th>Ускорение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>247 (8 бит)</td>
+              <td>15</td>
+              <td>10</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td>4033 (12 бит)</td>
+              <td>23</td>
+              <td>16</td>
+              <td>30%</td>
+            </tr>
+            <tr>
+              <td>53513 (16 бит)</td>
+              <td>31</td>
+              <td>22</td>
+              <td>29%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Заключение -->
+      <section class="mb-5">
+        <h3>4. Заключение</h3>
+        <p>Предложенный алгоритм демонстрирует существенное сокращение требований к квантовым ресурсам при сохранении точности факторизации. Дальнейшие исследования будут направлены на:</p>
+        <ul>
+          <li>Оптимизацию процедуры инициализации состояний</li>
+          <li>Адаптацию алгоритма для гибридных квантово-классических систем</li>
+          <li>Применение метода для решения других задач теории чисел</li>
+        </ul>
+      </section>
+
+      <!-- Благодарности -->
+      <section class="mb-5">
+        <h3>Благодарности</h3>
+        <p>Авторы выражают благодарность коллективу лаборатории квантовых вычислений НГТУ за ценные обсуждения и помощь в проведении экспериментов. Работа выполнена при поддержке гранта РФФИ №20-07-12345.</p>
+      </section>
+
+      <!-- Литература -->
+      <section class="references">
+        <h3>Литература</h3>
+        <ol>
+          <li>Shor P.W. Algorithms for quantum computation: discrete logarithms and factoring // Proceedings 35th Annual Symposium on Foundations of Computer Science. 1994. P. 124-134.</li>
+          <li>Nielsen M.A., Chuang I.L. Quantum Computation and Quantum Information. Cambridge University Press, 2010.</li>
+          <li>Сидоров С. С. Квантовые алгоритмы: теория и практика. М.: Наука, 2020.</li>
+          <li>Иванов И. И. Оптимизация квантовых вычислений // Квантовые информационные технологии. 2023. Т.14. №2. С. 45-62.</li>
+        </ol>
+      </section>
+
+      <!-- Дополнительные материалы -->
+      <div class="d-flex justify-content-between mt-5">
+        <a href="#" class="btn btn-outline-primary">
+          <i class="bi bi-file-pdf"></i> Полный текст (PDF)
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+      <p class="text-muted small">Контактная информация: research@nstu.ru, +7 (383) 346-11-11</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>

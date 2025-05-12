@@ -1,0 +1,49 @@
+{% extends 'Main/layoutDep.html' %}
+
+{% block title %}Информатики{% endblock %}
+
+{% block header %}
+    <h1>Кафедра Информатики</h1>
+    <p>Научные работы и исследования</p>
+{% endblock %}
+
+{% block main %}
+    <section class="mb-5">
+      <h2>О кафедре</h2>
+      <p>Кафедра Информатики занимается исследованиями в области....</p>
+    </section>
+
+    <!-- Работы кафедры -->
+    <section class="mb-5">
+      <h2>Научные работы</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 1</h5>
+              <p class="card-text">Автор: Иванов И.И., 2023 <br> Тип работы: ...</p>
+              <a href="{% url 'WorkInformatics' %}" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 2</h5>
+              <p class="card-text">Автор: Петров П.П., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 3</h5>
+              <p class="card-text">Автор: Сидоров С.С., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'Main/layout.html' %}
+
+{% block title %}Научные работы университета{% endblock %}
+
+{% block header%}
+    <h1>Научные работы университета</h1>
+    <p>Хранилище научных работ всех кафедр</p>
+{% endblock %}
+
+{% block navigate %}
+    <div class="container">
+      <a class="navbar-brand" href="#">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'departmants' %}">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'works' %}">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'AddWork' %}">Добавить работу</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% endblock %}
+
+{% block main%}
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Поиск научных работ</h2>
+      <div class="input-group">
+        <label>
+          <input type="text" class="form-control" placeholder="Введите название работы, автора или кафедру">
+        </label>
+        <button class="btn btn-primary" type="button">Найти</button>
+      </div>
+    </section>
+
+    <!-- Новые работы -->
+    <section class="mb-5">
+      <h2>Новые работы</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 1</h5>
+              <p class="card-text">Автор: Иванов И. И., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a><!--Тут научная работа со всем описанием-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 2</h5>
+              <p class="card-text">Автор: Петров П. П., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 3</h5>
+              <p class="card-text">Автор: Сидоров С. С., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные кафедры -->
+    <section class="mb-5">
+      <h2>Популярные кафедры</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Кафедра Физики</h5>
+              <p class="card-text">Описание кафедры</p>
+              <a href="{% url 'physics' %}" class="btn btn-secondary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Кафедра Математики</h5>
+              <p class="card-text">Описание кафедры</p>
+              <a href="{% url 'math' %}" class="btn btn-secondary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

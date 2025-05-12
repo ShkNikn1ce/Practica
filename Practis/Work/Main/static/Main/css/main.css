@@ -1,0 +1,18 @@
+.work-metadata {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .abstract {
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .references {
+      font-size: 0.9rem;
+    }
+    .figure-caption {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 10px;
+    }

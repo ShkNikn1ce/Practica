@@ -1,0 +1,611 @@
+Справка по данному проекту:
+
+index.html://////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Научные работы университета</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Научные работы университета</h1>
+      <p>Хранилище научных работ всех кафедр</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Main/departmants">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <!-- Поиск -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Поиск научных работ</h2>
+      <div class="input-group">
+        <label>
+          <input type="text" class="form-control" placeholder="Введите название работы, автора или кафедру">
+        </label>
+        <button class="btn btn-primary" type="button">Найти</button>
+      </div>
+    </section>
+
+    <!-- Новые работы -->
+    <section class="mb-5">
+      <h2>Новые работы</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 1</h5>
+              <p class="card-text">Автор: Иванов И. И., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a><!--Тут научная работа со всем описанием-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 2</h5>
+              <p class="card-text">Автор: Петров П. П., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 3</h5>
+              <p class="card-text">Автор: Сидоров С. С., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные кафедры -->
+    <section class="mb-5">
+      <h2>Популярные кафедры</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Кафедра 1</h5>
+              <p class="card-text">Описание кафедры</p>
+              <a href="physics.html" class="btn btn-secondary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Кафедра 2</h5>
+              <p class="card-text">Описание кафедры</p>
+              <a href="math.html" class="btn btn-secondary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+departmant.html://///////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кафедры НГТУ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Кафедры университета</h1>
+      <p>Список всех кафедр НГТУ НЭТИ</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="departmants.html">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <section class="mb-5">
+      <h2>Список кафедр</h2>
+      <div class="list-group">
+        <a href="physics.html" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Кафедра 1</h5>
+          </div>
+          <p class="mb-1">Основные направления:....</p>
+        </a>
+        <a href="math.html" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Кафедра 2</h5>
+          </div>
+          <p class="mb-1">Основные направления: ....</p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Кафедра 3</h5>
+          </div>
+          <p class="mb-1">Основные направления:....</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+works.html///////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Научные работы</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Научные работы</h1>
+      <p>Исследования и публикации НГТУ НЭТИ</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="departmants.html">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <section class="mb-5">
+      <h2>Последние научные работы</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Исследование в области квантовых вычислений</h5>
+              <p class="card-text">Авторы: Иванов И. И., Петров П. П. (2024)<br>Кафедра: 1<br>Тип: Научная статья</p>
+              <a href="Sinces.html" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Новые алгоритмы машинного обучения</h5>
+              <p class="card-text">Автор: Сидоров С. С. (2023)<br>Кафедра: 3<br>Тип: Диссертация</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Математическое моделирование климата</h5>
+              <p class="card-text">Авторы: Васильев В. В., Николаев Н. Н. (2025)<br>Кафедра: 2<br>Тип: Исследование</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Разработка новых материалов</h5>
+              <p class="card-text">Автор: Кузнецов К. К. (2024)<br>Кафедра: 1<br>Тип: Патент</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+contact.html//////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Контакты</h1>
+      <p>Как с нами связаться</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="departmants.html">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <section class="mb-5">
+          <h2>Контактная информация</h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Адрес:</strong> 630073, г. Новосибирск, пр. Карла Маркса, 20
+            </li>
+            <li class="list-group-item">
+              <strong>Телефон:</strong> +7 (383) 346-11-11
+            </li>
+            <li class="list-group-item">
+              <strong>Email:</strong> info@nstu.ru
+            </li>
+            <li class="list-group-item">
+              <strong>Приемная комиссия:</strong> +7 (383) 346-02-31
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="col-md-6 mb-4">
+        <section class="mb-5">
+          <h2>Обратная связь</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+physics.html////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кафедра физики</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Кафедра Физики</h1>
+      <p>Научные работы и исследования</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="departmants.html">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <!-- Описание кафедры -->
+    <section class="mb-5">
+      <h2>О кафедре</h2>
+      <p>Кафедра Физики занимается исследованиями в области....</p>
+    </section>
+
+    <!-- Работы кафедры -->
+    <section class="mb-5">
+      <h2>Научные работы</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 1</h5>
+              <p class="card-text">Автор: Иванов И.И., 2023 <br> Тип работы: ...</p>
+              <a href="SincesWork.html" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 2</h5>
+              <p class="card-text">Автор: Петров П.П., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 3</h5>
+              <p class="card-text">Автор: Сидоров С.С., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+math.html/////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кафедра Математики</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <h1>Кафедра Мтематики</h1>
+      <p>Научные работы и исследования</p>
+    </div>
+  </header>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="departmants.html">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container my-5">
+    <!-- Описание кафедры -->
+    <section class="mb-5">
+      <h2>О кафедре</h2>
+      <p>Кафедра Математики занимается исследованиями в области....</p>
+    </section>
+
+    <!-- Работы кафедры -->
+    <section class="mb-5">
+      <h2>Научные работы</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 1</h5>
+              <p class="card-text">Автор: Иванов И.И., 2023 <br> Тип работы: ...</p>
+              <a href="SincesWork.html" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 2</h5>
+              <p class="card-text">Автор: Петров П.П., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Название работы 3</h5>
+              <p class="card-text">Автор: Сидоров С.С., 2023 <br> Тип работы: ...</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 НГТУ НЭТИ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

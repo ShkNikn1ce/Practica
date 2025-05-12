@@ -1,0 +1,83 @@
+{% extends 'Main/layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block header %}
+    <h1>Контакты</h1>
+    <p>Как с нами связаться</p>
+{% endblock %}
+
+{% block navigate %}
+    <div class="container">
+      <a class="navbar-brand" href="#">НГТУ НЭТИ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+           <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'departmants' %}">Кафедры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'works' %}">Работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'contact' %}">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'AddWork' %}">Добавить работу</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <section class="mb-5">
+          <h2>Контактная информация</h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Адрес:</strong> 630073, г. Новосибирск, пр. Карла Маркса, 20
+            </li>
+            <li class="list-group-item">
+              <strong>Телефон:</strong> +7 (383) 346-11-11
+            </li>
+            <li class="list-group-item">
+              <strong>Email:</strong> info@nstu.ru
+            </li>
+            <li class="list-group-item">
+              <strong>Приемная комиссия:</strong> +7 (383) 346-02-31
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="col-md-6 mb-4">
+        <section class="mb-5">
+          <h2>Обратная связь</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+{% endblock %}
